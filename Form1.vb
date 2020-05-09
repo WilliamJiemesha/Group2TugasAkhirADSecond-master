@@ -16,9 +16,7 @@
         MehtodePayForm.Show()
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles PriceCard.TextChanged
+    Private Sub DebitForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PriceCard.Text = ReceiptFormvb.total
     End Sub
-
-
 End Class
