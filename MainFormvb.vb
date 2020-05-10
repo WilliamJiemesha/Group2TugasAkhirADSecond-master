@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.IO
 Public Class MainFormvb
-    Dim connect As New MySqlConnection("datasource=127.0.0.1;port=3308;username=root;password=;database=movie_theatre")
+    Dim connect As New MySqlConnection(AskDatabase.ConnStringFix)
     Dim command As New MySqlCommand
     Dim adapt As New MySqlDataAdapter
     Dim query As String
@@ -46,6 +46,7 @@ Public Class MainFormvb
     'Exit Button
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Selection.Show()
+        AdminLogin.Close()
         Me.Close()
     End Sub
 
@@ -427,7 +428,7 @@ Public Class MainFormvb
                 connect.Close()
 
 
-                ''' New
+                'New
                 Dim fd As OpenFileDialog = New OpenFileDialog()
                 Dim strFileName As String
                 Dim strFilePath As String
@@ -446,7 +447,7 @@ Public Class MainFormvb
 
                 filename = Path.GetFileName(strFileName)
                 If File.Exists(strFileName) Then
-                    Dim destinationPath As String = Path.Combine("C:\Users\user\source\repos\Group2TugasAkhirADSecond\Resources", filename)
+                    Dim destinationPath As String = Path.Combine(AskDatabase.filepath, filename)
                     If File.Exists(destinationPath) Then
                         MessageBox.Show("File name already exists", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
                     Else
@@ -458,7 +459,7 @@ Public Class MainFormvb
                 End If
 
                 'Later Change
-                My.Computer.FileSystem.RenameFile("C:\Users\user\source\repos\Group2TugasAkhirADSecond\Resources" + "\" + filename, ids.ToString + ".jpg")
+                My.Computer.FileSystem.RenameFile(AskDatabase.filepath + "\" + filename, ids.ToString + ".jpg")
                 ForTable()
             End If
         Catch ex As Exception
@@ -651,6 +652,7 @@ Public Class MainFormvb
 
         ForTables()
     End Sub
+
     Private Sub forPGs()
         Try
             connect.Open()
@@ -799,7 +801,7 @@ Public Class MainFormvb
                             idseat = "D" + i.ToString
                         End If
 
-                        query = "INSERT INTO seat VALUES ('" + idseat + "','1','" + idtheatreadsc + "','" + idscreeningadsc + "')"
+                        query = "INSERT INTO seat VALUES ('" + idseat + "','1','" + idtheatreadsc + "','" + idscreeningadsc + "', '" + idfilmadsc + "')"
                         command = New MySqlCommand(query, connect)
                         command.ExecuteNonQuery()
                     Next
@@ -807,6 +809,7 @@ Public Class MainFormvb
                     MessageBox.Show("Success", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
                 Else
                     MessageBox.Show("Schedule already exists", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                    connect.Close()
                 End If
             Catch ex As Exception
                 connect.Close()
@@ -874,6 +877,17 @@ Public Class MainFormvb
         End If
     End Sub
 
+    Private Sub FilmReportButton_Click(sender As Object, e As EventArgs) Handles FilmReportButton.Click
+        DocumentFilm.Show()
+    End Sub
+
+    Private Sub SalesReportButton_Click(sender As Object, e As EventArgs) Handles SalesReportButton.Click
+        DocumentSales.Show()
+    End Sub
+
+    Private Sub TheatreReportButton_Click(sender As Object, e As EventArgs) Handles TheatreReportButton.Click
+        DocumentTheatre.Show()
+    End Sub
 
 
 

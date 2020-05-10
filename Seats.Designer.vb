@@ -30,13 +30,14 @@ Partial Class Seats
         Me.Label3 = New System.Windows.Forms.Label()
         Me.buttoncheck = New System.Windows.Forms.Button()
         Me.buttonx = New System.Windows.Forms.Button()
+        Me.HomeButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Green
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(800, 100)
+        Me.Button1.Location = New System.Drawing.Point(590, 98)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(25, 25)
         Me.Button1.TabIndex = 0
@@ -46,7 +47,7 @@ Partial Class Seats
         '
         Me.Button2.BackColor = System.Drawing.Color.Red
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(800, 142)
+        Me.Button2.Location = New System.Drawing.Point(590, 141)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(25, 25)
         Me.Button2.TabIndex = 1
@@ -56,7 +57,7 @@ Partial Class Seats
         '
         Me.Button3.BackColor = System.Drawing.Color.Gray
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(800, 186)
+        Me.Button3.Location = New System.Drawing.Point(590, 184)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(25, 25)
         Me.Button3.TabIndex = 2
@@ -68,7 +69,7 @@ Partial Class Seats
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(831, 100)
+        Me.Label1.Location = New System.Drawing.Point(621, 98)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(68, 20)
         Me.Label1.TabIndex = 3
@@ -80,7 +81,7 @@ Partial Class Seats
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(831, 142)
+        Me.Label2.Location = New System.Drawing.Point(621, 141)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(52, 20)
         Me.Label2.TabIndex = 4
@@ -92,7 +93,7 @@ Partial Class Seats
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(831, 186)
+        Me.Label3.Location = New System.Drawing.Point(621, 184)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(74, 20)
         Me.Label3.TabIndex = 5
@@ -105,7 +106,7 @@ Partial Class Seats
         Me.buttoncheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.buttoncheck.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.buttoncheck.ForeColor = System.Drawing.Color.Transparent
-        Me.buttoncheck.Location = New System.Drawing.Point(315, 605)
+        Me.buttoncheck.Location = New System.Drawing.Point(146, 605)
         Me.buttoncheck.Name = "buttoncheck"
         Me.buttoncheck.Size = New System.Drawing.Size(75, 75)
         Me.buttoncheck.TabIndex = 6
@@ -118,11 +119,23 @@ Partial Class Seats
         Me.buttonx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.buttonx.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.buttonx.ForeColor = System.Drawing.Color.Transparent
-        Me.buttonx.Location = New System.Drawing.Point(410, 605)
+        Me.buttonx.Location = New System.Drawing.Point(292, 605)
         Me.buttonx.Name = "buttonx"
         Me.buttonx.Size = New System.Drawing.Size(75, 75)
         Me.buttonx.TabIndex = 7
         Me.buttonx.UseVisualStyleBackColor = False
+        '
+        'HomeButton
+        '
+        Me.HomeButton.BackColor = System.Drawing.Color.Transparent
+        Me.HomeButton.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldLogOutExit
+        Me.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.HomeButton.Location = New System.Drawing.Point(1255, -3)
+        Me.HomeButton.Name = "HomeButton"
+        Me.HomeButton.Size = New System.Drawing.Size(25, 25)
+        Me.HomeButton.TabIndex = 23
+        Me.HomeButton.UseVisualStyleBackColor = False
         '
         'Seats
         '
@@ -130,6 +143,7 @@ Partial Class Seats
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.BackgroundFloral
         Me.ClientSize = New System.Drawing.Size(1280, 720)
+        Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.buttonx)
         Me.Controls.Add(Me.buttoncheck)
         Me.Controls.Add(Me.Label3)
@@ -155,4 +169,5 @@ Partial Class Seats
     Friend WithEvents Label3 As Label
     Friend WithEvents buttoncheck As Button
     Friend WithEvents buttonx As Button
+    Friend WithEvents HomeButton As Button
 End Class

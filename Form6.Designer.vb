@@ -25,7 +25,8 @@ Partial Class MehtodePayForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.AgreeButton = New System.Windows.Forms.Button()
-        Me.CbPayment = New System.Windows.Forms.TextBox()
+        Me.CbPayment = New DevExpress.XtraEditors.ComboBoxEdit()
+        CType(Me.CbPayment.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
@@ -34,10 +35,9 @@ Partial Class MehtodePayForm
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(274, 211)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(407, 264)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(215, 34)
+        Me.Label3.Size = New System.Drawing.Size(168, 26)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Payment Method"
         '
@@ -47,10 +47,9 @@ Partial Class MehtodePayForm
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(274, 280)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(407, 321)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(600, 34)
+        Me.Label4.Size = New System.Drawing.Size(507, 26)
         Me.Label4.TabIndex = 16
         Me.Label4.Text = "_____________________________________________"
         '
@@ -61,38 +60,60 @@ Partial Class MehtodePayForm
         Me.AgreeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.AgreeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.AgreeButton.ForeColor = System.Drawing.Color.Transparent
-        Me.AgreeButton.Location = New System.Drawing.Point(579, 364)
-        Me.AgreeButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.AgreeButton.Location = New System.Drawing.Point(635, 389)
         Me.AgreeButton.Name = "AgreeButton"
-        Me.AgreeButton.Size = New System.Drawing.Size(100, 92)
+        Me.AgreeButton.Size = New System.Drawing.Size(75, 75)
         Me.AgreeButton.TabIndex = 17
         Me.AgreeButton.UseVisualStyleBackColor = False
         '
         'CbPayment
         '
-        Me.CbPayment.AutoCompleteCustomSource.AddRange(New String() {"Cash", "Debit/Credit Card", "Ovo", "Go-Pay"})
-        Me.CbPayment.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.CbPayment.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.CbPayment.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CbPayment.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.CbPayment.Location = New System.Drawing.Point(280, 280)
-        Me.CbPayment.Margin = New System.Windows.Forms.Padding(4)
+        Me.CbPayment.EditValue = ""
+        Me.CbPayment.Location = New System.Drawing.Point(412, 307)
         Me.CbPayment.Name = "CbPayment"
-        Me.CbPayment.Size = New System.Drawing.Size(660, 32)
-        Me.CbPayment.TabIndex = 18
+        Me.CbPayment.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.CbPayment.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CbPayment.Properties.Appearance.Font = New System.Drawing.Font("Japanese Gothic", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CbPayment.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CbPayment.Properties.Appearance.Options.UseBackColor = True
+        Me.CbPayment.Properties.Appearance.Options.UseFont = True
+        Me.CbPayment.Properties.Appearance.Options.UseForeColor = True
+        Me.CbPayment.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.CbPayment.Properties.AppearanceDropDown.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CbPayment.Properties.AppearanceDropDown.Font = New System.Drawing.Font("Japanese Gothic", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CbPayment.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CbPayment.Properties.AppearanceDropDown.Options.UseBackColor = True
+        Me.CbPayment.Properties.AppearanceDropDown.Options.UseFont = True
+        Me.CbPayment.Properties.AppearanceDropDown.Options.UseForeColor = True
+        Me.CbPayment.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CbPayment.Properties.AppearanceFocused.Options.UseForeColor = True
+        Me.CbPayment.Properties.AppearanceItemSelected.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CbPayment.Properties.AppearanceItemSelected.Options.UseForeColor = True
+        Me.CbPayment.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.CbPayment.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.CbPayment.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.CbPayment.Properties.HighlightedItemStyle = DevExpress.XtraEditors.HighlightStyle.Standard
+        Me.CbPayment.Properties.Items.AddRange(New Object() {"Cash", "Debit/Credit Card", "OVO", "Go-Pay"})
+        Me.CbPayment.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
+        Me.CbPayment.Size = New System.Drawing.Size(495, 32)
+        Me.CbPayment.TabIndex = 44
         '
         'MehtodePayForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.Resources.Floral
-        Me.ClientSize = New System.Drawing.Size(1240, 783)
+        Me.ClientSize = New System.Drawing.Size(1280, 720)
         Me.Controls.Add(Me.CbPayment)
         Me.Controls.Add(Me.AgreeButton)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MehtodePayForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        CType(Me.CbPayment.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -101,5 +122,5 @@ Partial Class MehtodePayForm
     Friend WithEvents AgreeButton As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents CbPayment As TextBox
+    Friend WithEvents CbPayment As DevExpress.XtraEditors.ComboBoxEdit
 End Class

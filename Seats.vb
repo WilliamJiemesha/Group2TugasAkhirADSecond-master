@@ -15,6 +15,7 @@ Public Class Seats
 
     Dim screening As String
     Dim theatre As String
+    Dim film As String
     Dim count As Integer
     Public tickets As Integer
 
@@ -38,13 +39,14 @@ Public Class Seats
             Me.BackColor = Color.FromArgb(18, 16, 10)
 
 
-            Dim connect As New MySqlConnection("datasource=127.0.0.1;port=3308;username=root;password=;database=movie_theatre")
+            Dim connect As New MySqlConnection(AskDatabase.ConnStringFix)
             Dim command As New MySqlCommand
             Dim adapt As New MySqlDataAdapter
             Dim query As String
             Dim dw As New DataTable
             screening = TimeSelection.Screening
             theatre = TimeSelection.Theatre
+            film = TimeSelection.ChosenFilm
             seat_count = 24
             seat_count_y = seat_count / 8
 
@@ -58,7 +60,7 @@ Public Class Seats
                 .BackColor = Color.Black
             End With
 
-            query = "SELECT seat_id, seat_status FROM seat WHERE theatre_id = '" + theatre + "' AND screening_id = '" + screening + "'"
+            query = "SELECT seat_id, seat_status FROM seat WHERE theatre_id = '" + theatre + "' AND screening_id = '" + screening + "' AND film_id = '" + film + "'"
             command = New MySqlCommand(query, connect)
             adapt = New MySqlDataAdapter(command)
             adapt.Fill(dw)
@@ -133,7 +135,7 @@ Public Class Seats
         Else
             If MessageBox.Show("Are you sure?", "Notice", MessageBoxButtons.YesNo, MessageBoxIcon.None) = DialogResult.Yes Then
                 CType(sender, Button).BackColor = Color.Green
-                Dim connect As New MySqlConnection("datasource=127.0.0.1;port=3308;username=root;password=;database=movie_theatre")
+                Dim connect As New MySqlConnection(AskDatabase.ConnStringFix)
                 Dim command As New MySqlCommand
                 Dim query As String
                 Try
@@ -151,5 +153,20 @@ Public Class Seats
                 End Try
             End If
         End If
+    End Sub
+
+    Private Sub buttonx_Click(sender As Object, e As EventArgs) Handles buttonx.Click
+        TimeSelection.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub buttoncheck_Click(sender As Object, e As EventArgs) Handles buttoncheck.Click
+        ReceiptFormvb.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub HomeButton_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
+        Me.Close()
+        TimeSelection.Show()
     End Sub
 End Class

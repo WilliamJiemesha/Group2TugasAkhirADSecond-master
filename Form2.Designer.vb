@@ -39,10 +39,9 @@ Partial Class GopayForm
         Me.buttonx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.buttonx.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.buttonx.ForeColor = System.Drawing.Color.Transparent
-        Me.buttonx.Location = New System.Drawing.Point(664, 487)
-        Me.buttonx.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonx.Location = New System.Drawing.Point(673, 454)
         Me.buttonx.Name = "buttonx"
-        Me.buttonx.Size = New System.Drawing.Size(100, 92)
+        Me.buttonx.Size = New System.Drawing.Size(75, 75)
         Me.buttonx.TabIndex = 26
         Me.buttonx.UseVisualStyleBackColor = False
         '
@@ -53,10 +52,9 @@ Partial Class GopayForm
         Me.AgreeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.AgreeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.AgreeButton.ForeColor = System.Drawing.Color.Transparent
-        Me.AgreeButton.Location = New System.Drawing.Point(405, 487)
-        Me.AgreeButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.AgreeButton.Location = New System.Drawing.Point(479, 454)
         Me.AgreeButton.Name = "AgreeButton"
-        Me.AgreeButton.Size = New System.Drawing.Size(100, 92)
+        Me.AgreeButton.Size = New System.Drawing.Size(75, 75)
         Me.AgreeButton.TabIndex = 25
         Me.AgreeButton.UseVisualStyleBackColor = False
         '
@@ -64,13 +62,11 @@ Partial Class GopayForm
         '
         Me.GoNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.GoNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.GoNumber.Enabled = False
         Me.GoNumber.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GoNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GoNumber.Location = New System.Drawing.Point(303, 371)
-        Me.GoNumber.Margin = New System.Windows.Forms.Padding(4)
+        Me.GoNumber.Location = New System.Drawing.Point(402, 359)
         Me.GoNumber.Name = "GoNumber"
-        Me.GoNumber.Size = New System.Drawing.Size(660, 32)
+        Me.GoNumber.Size = New System.Drawing.Size(495, 26)
         Me.GoNumber.TabIndex = 23
         '
         'Label3
@@ -79,10 +75,9 @@ Partial Class GopayForm
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(296, 336)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(397, 331)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(208, 34)
+        Me.Label3.Size = New System.Drawing.Size(162, 26)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "GO-Pay Number"
         '
@@ -92,10 +87,9 @@ Partial Class GopayForm
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(296, 373)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(397, 361)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(600, 34)
+        Me.Label4.Size = New System.Drawing.Size(507, 26)
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "_____________________________________________"
         '
@@ -106,10 +100,9 @@ Partial Class GopayForm
         Me.GoPrice.Enabled = False
         Me.GoPrice.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GoPrice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.GoPrice.Location = New System.Drawing.Point(303, 263)
-        Me.GoPrice.Margin = New System.Windows.Forms.Padding(4)
+        Me.GoPrice.Location = New System.Drawing.Point(402, 272)
         Me.GoPrice.Name = "GoPrice"
-        Me.GoPrice.Size = New System.Drawing.Size(660, 32)
+        Me.GoPrice.Size = New System.Drawing.Size(495, 26)
         Me.GoPrice.TabIndex = 20
         '
         'Label1
@@ -118,10 +111,9 @@ Partial Class GopayForm
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(296, 227)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(397, 242)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 34)
+        Me.Label1.Size = New System.Drawing.Size(57, 26)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Price"
         '
@@ -131,19 +123,18 @@ Partial Class GopayForm
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(296, 264)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(397, 272)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(600, 34)
+        Me.Label2.Size = New System.Drawing.Size(507, 26)
         Me.Label2.TabIndex = 21
         Me.Label2.Text = "_____________________________________________"
         '
         'GopayForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.Resources.Floral
-        Me.ClientSize = New System.Drawing.Size(1259, 806)
+        Me.ClientSize = New System.Drawing.Size(1280, 720)
         Me.Controls.Add(Me.buttonx)
         Me.Controls.Add(Me.AgreeButton)
         Me.Controls.Add(Me.GoNumber)
@@ -152,7 +143,10 @@ Partial Class GopayForm
         Me.Controls.Add(Me.GoPrice)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "GopayForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GO-Pay"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -97,6 +97,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property GoldCash() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("GoldCash", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property GoldCheck() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("GoldCheck", resourceCulture)
@@ -197,6 +207,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property GoldMovie() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("GoldMovie", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property GoldPencil() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("GoldPencil", resourceCulture)
@@ -217,6 +237,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property GoldPrinter() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("GoldPrinter", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property GoldPurchaseOrder() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("GoldPurchaseOrder", resourceCulture)
@@ -230,6 +260,16 @@ Namespace My.Resources
         Friend Shared ReadOnly Property GoldReload() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("GoldReload", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property GoldReport() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("GoldReport", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -260,6 +300,16 @@ Namespace My.Resources
         Friend Shared ReadOnly Property GoldX() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("GoldX", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property GoldX1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("GoldX1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -39,10 +39,9 @@ Partial Class CashForm
         Me.AgreeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.AgreeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.AgreeButton.ForeColor = System.Drawing.Color.Transparent
-        Me.AgreeButton.Location = New System.Drawing.Point(399, 486)
-        Me.AgreeButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.AgreeButton.Location = New System.Drawing.Point(501, 447)
         Me.AgreeButton.Name = "AgreeButton"
-        Me.AgreeButton.Size = New System.Drawing.Size(100, 92)
+        Me.AgreeButton.Size = New System.Drawing.Size(75, 75)
         Me.AgreeButton.TabIndex = 17
         Me.AgreeButton.UseVisualStyleBackColor = False
         '
@@ -50,13 +49,11 @@ Partial Class CashForm
         '
         Me.CashInput.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.CashInput.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.CashInput.Enabled = False
         Me.CashInput.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CashInput.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.CashInput.Location = New System.Drawing.Point(297, 370)
-        Me.CashInput.Margin = New System.Windows.Forms.Padding(4)
+        Me.CashInput.Location = New System.Drawing.Point(425, 353)
         Me.CashInput.Name = "CashInput"
-        Me.CashInput.Size = New System.Drawing.Size(660, 32)
+        Me.CashInput.Size = New System.Drawing.Size(495, 26)
         Me.CashInput.TabIndex = 15
         '
         'Label3
@@ -65,10 +62,9 @@ Partial Class CashForm
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(290, 335)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(420, 324)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(72, 34)
+        Me.Label3.Size = New System.Drawing.Size(56, 26)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Cash"
         '
@@ -78,10 +74,9 @@ Partial Class CashForm
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(290, 372)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(420, 354)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(600, 34)
+        Me.Label4.Size = New System.Drawing.Size(507, 26)
         Me.Label4.TabIndex = 16
         Me.Label4.Text = "_____________________________________________"
         '
@@ -92,10 +87,9 @@ Partial Class CashForm
         Me.CashPrice.Enabled = False
         Me.CashPrice.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CashPrice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.CashPrice.Location = New System.Drawing.Point(297, 262)
-        Me.CashPrice.Margin = New System.Windows.Forms.Padding(4)
+        Me.CashPrice.Location = New System.Drawing.Point(425, 265)
         Me.CashPrice.Name = "CashPrice"
-        Me.CashPrice.Size = New System.Drawing.Size(660, 32)
+        Me.CashPrice.Size = New System.Drawing.Size(495, 26)
         Me.CashPrice.TabIndex = 12
         '
         'Label1
@@ -104,10 +98,9 @@ Partial Class CashForm
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(290, 226)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(420, 236)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 34)
+        Me.Label1.Size = New System.Drawing.Size(57, 26)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Price"
         '
@@ -117,10 +110,9 @@ Partial Class CashForm
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(290, 263)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(420, 266)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(600, 34)
+        Me.Label2.Size = New System.Drawing.Size(507, 26)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "_____________________________________________"
         '
@@ -131,19 +123,18 @@ Partial Class CashForm
         Me.buttonx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.buttonx.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.buttonx.ForeColor = System.Drawing.Color.Transparent
-        Me.buttonx.Location = New System.Drawing.Point(658, 486)
-        Me.buttonx.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonx.Location = New System.Drawing.Point(696, 447)
         Me.buttonx.Name = "buttonx"
-        Me.buttonx.Size = New System.Drawing.Size(100, 92)
+        Me.buttonx.Size = New System.Drawing.Size(75, 75)
         Me.buttonx.TabIndex = 18
         Me.buttonx.UseVisualStyleBackColor = False
         '
         'CashForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.Resources.Floral
-        Me.ClientSize = New System.Drawing.Size(1247, 780)
+        Me.ClientSize = New System.Drawing.Size(1280, 720)
         Me.Controls.Add(Me.buttonx)
         Me.Controls.Add(Me.AgreeButton)
         Me.Controls.Add(Me.CashInput)
@@ -152,7 +143,10 @@ Partial Class CashForm
         Me.Controls.Add(Me.CashPrice)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "CashForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cash"
         Me.ResumeLayout(False)
         Me.PerformLayout()

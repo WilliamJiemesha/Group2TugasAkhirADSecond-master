@@ -43,6 +43,7 @@ Partial Class FilmSelection
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.simpan = New System.Windows.Forms.DataGridView()
+        Me.HomeButton = New System.Windows.Forms.Button()
         CType(Me.box1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.box2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.box3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,7 +60,7 @@ Partial Class FilmSelection
         'box1
         '
         Me.box1.BackColor = System.Drawing.Color.Transparent
-        Me.box1.Location = New System.Drawing.Point(10, 10)
+        Me.box1.Location = New System.Drawing.Point(10, 29)
         Me.box1.Name = "box1"
         Me.box1.Size = New System.Drawing.Size(200, 300)
         Me.box1.TabIndex = 0
@@ -68,7 +69,7 @@ Partial Class FilmSelection
         'box2
         '
         Me.box2.BackColor = System.Drawing.Color.Transparent
-        Me.box2.Location = New System.Drawing.Point(270, 10)
+        Me.box2.Location = New System.Drawing.Point(270, 29)
         Me.box2.Name = "box2"
         Me.box2.Size = New System.Drawing.Size(200, 300)
         Me.box2.TabIndex = 1
@@ -77,7 +78,7 @@ Partial Class FilmSelection
         'box3
         '
         Me.box3.BackColor = System.Drawing.Color.Transparent
-        Me.box3.Location = New System.Drawing.Point(540, 10)
+        Me.box3.Location = New System.Drawing.Point(540, 29)
         Me.box3.Name = "box3"
         Me.box3.Size = New System.Drawing.Size(200, 300)
         Me.box3.TabIndex = 2
@@ -86,7 +87,7 @@ Partial Class FilmSelection
         'box4
         '
         Me.box4.BackColor = System.Drawing.Color.Transparent
-        Me.box4.Location = New System.Drawing.Point(810, 10)
+        Me.box4.Location = New System.Drawing.Point(810, 29)
         Me.box4.Name = "box4"
         Me.box4.Size = New System.Drawing.Size(200, 300)
         Me.box4.TabIndex = 3
@@ -95,7 +96,7 @@ Partial Class FilmSelection
         'box5
         '
         Me.box5.BackColor = System.Drawing.Color.Transparent
-        Me.box5.Location = New System.Drawing.Point(1070, 10)
+        Me.box5.Location = New System.Drawing.Point(1060, 29)
         Me.box5.Name = "box5"
         Me.box5.Size = New System.Drawing.Size(200, 300)
         Me.box5.TabIndex = 4
@@ -104,7 +105,7 @@ Partial Class FilmSelection
         'box10
         '
         Me.box10.BackColor = System.Drawing.Color.Transparent
-        Me.box10.Location = New System.Drawing.Point(1070, 370)
+        Me.box10.Location = New System.Drawing.Point(1060, 370)
         Me.box10.Name = "box10"
         Me.box10.Size = New System.Drawing.Size(200, 300)
         Me.box10.TabIndex = 9
@@ -152,7 +153,7 @@ Partial Class FilmSelection
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(79, 313)
+        Me.Label1.Location = New System.Drawing.Point(12, 332)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 20)
         Me.Label1.TabIndex = 10
@@ -164,7 +165,7 @@ Partial Class FilmSelection
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(346, 313)
+        Me.Label2.Location = New System.Drawing.Point(266, 332)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(56, 20)
         Me.Label2.TabIndex = 11
@@ -176,7 +177,7 @@ Partial Class FilmSelection
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(620, 313)
+        Me.Label3.Location = New System.Drawing.Point(536, 332)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 20)
         Me.Label3.TabIndex = 12
@@ -188,7 +189,7 @@ Partial Class FilmSelection
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(888, 313)
+        Me.Label4.Location = New System.Drawing.Point(806, 332)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(56, 20)
         Me.Label4.TabIndex = 13
@@ -200,7 +201,7 @@ Partial Class FilmSelection
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(1157, 313)
+        Me.Label5.Location = New System.Drawing.Point(1056, 332)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(56, 20)
         Me.Label5.TabIndex = 14
@@ -212,7 +213,7 @@ Partial Class FilmSelection
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(1157, 673)
+        Me.Label6.Location = New System.Drawing.Point(1056, 673)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(56, 20)
         Me.Label6.TabIndex = 19
@@ -224,7 +225,7 @@ Partial Class FilmSelection
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(888, 673)
+        Me.Label7.Location = New System.Drawing.Point(806, 673)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(56, 20)
         Me.Label7.TabIndex = 18
@@ -236,7 +237,7 @@ Partial Class FilmSelection
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(620, 673)
+        Me.Label8.Location = New System.Drawing.Point(536, 673)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(56, 20)
         Me.Label8.TabIndex = 17
@@ -248,7 +249,7 @@ Partial Class FilmSelection
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(346, 673)
+        Me.Label9.Location = New System.Drawing.Point(266, 673)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 20)
         Me.Label9.TabIndex = 16
@@ -260,7 +261,7 @@ Partial Class FilmSelection
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(79, 673)
+        Me.Label10.Location = New System.Drawing.Point(12, 673)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(65, 20)
         Me.Label10.TabIndex = 15
@@ -275,12 +276,25 @@ Partial Class FilmSelection
         Me.simpan.TabIndex = 20
         Me.simpan.Visible = False
         '
+        'HomeButton
+        '
+        Me.HomeButton.BackColor = System.Drawing.Color.Transparent
+        Me.HomeButton.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldHome
+        Me.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.HomeButton.Location = New System.Drawing.Point(1256, 0)
+        Me.HomeButton.Name = "HomeButton"
+        Me.HomeButton.Size = New System.Drawing.Size(25, 25)
+        Me.HomeButton.TabIndex = 21
+        Me.HomeButton.UseVisualStyleBackColor = False
+        '
         'FilmSelection
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.BackgroundFloral
         Me.ClientSize = New System.Drawing.Size(1280, 720)
+        Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.simpan)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label7)
@@ -343,4 +357,5 @@ Partial Class FilmSelection
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents simpan As DataGridView
+    Friend WithEvents HomeButton As Button
 End Class

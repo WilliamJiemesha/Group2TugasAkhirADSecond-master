@@ -7,13 +7,15 @@
         ElseIf SecurityNumber.Text = "" Then
             MessageBox.Show("Input Data Dengan Benar!", "PENTING", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            MessageBox.Show("Apakah Anda Yakin Ingin Melanjutkan ?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+            If MessageBox.Show("Apakah Anda Yakin Ingin Melanjutkan ?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+                FinishForm.Show()
+            End If
         End If
-        FinishForm.Show()
     End Sub
 
     Private Sub buttonx_Click(sender As Object, e As EventArgs) Handles buttonx.Click
         MehtodePayForm.Show()
+        Me.Close()
     End Sub
 
     Private Sub DebitForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load

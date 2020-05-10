@@ -3,18 +3,18 @@
         If GoNumber.Text = "" Then
             MessageBox.Show("Input Data Dengan Benar!", "PENTING", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            MessageBox.Show("Apakah Anda Yakin Ingin Melanjutkan ?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+            If MessageBox.Show("Apakah Anda Yakin Ingin Melanjutkan ?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+                FinishForm.Show()
+            End If
         End If
-        FinishForm.Show()
     End Sub
 
     Private Sub buttonx_Click(sender As Object, e As EventArgs) Handles buttonx.Click
         MehtodePayForm.Show()
+        Me.Close()
     End Sub
 
-    Private Sub SeatCountBox_TextChanged(sender As Object, e As EventArgs) Handles GoPrice.TextChanged
+    Private Sub GopayForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GoPrice.Text = ReceiptFormvb.total
     End Sub
-
-
 End Class

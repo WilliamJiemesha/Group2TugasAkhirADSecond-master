@@ -39,10 +39,9 @@ Partial Class OvoForm
         Me.buttonx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.buttonx.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.buttonx.ForeColor = System.Drawing.Color.Transparent
-        Me.buttonx.Location = New System.Drawing.Point(666, 477)
-        Me.buttonx.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonx.Location = New System.Drawing.Point(666, 453)
         Me.buttonx.Name = "buttonx"
-        Me.buttonx.Size = New System.Drawing.Size(100, 92)
+        Me.buttonx.Size = New System.Drawing.Size(75, 75)
         Me.buttonx.TabIndex = 26
         Me.buttonx.UseVisualStyleBackColor = False
         '
@@ -53,10 +52,9 @@ Partial Class OvoForm
         Me.AgreeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.AgreeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.AgreeButton.ForeColor = System.Drawing.Color.Transparent
-        Me.AgreeButton.Location = New System.Drawing.Point(407, 477)
-        Me.AgreeButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.AgreeButton.Location = New System.Drawing.Point(471, 453)
         Me.AgreeButton.Name = "AgreeButton"
-        Me.AgreeButton.Size = New System.Drawing.Size(100, 92)
+        Me.AgreeButton.Size = New System.Drawing.Size(75, 75)
         Me.AgreeButton.TabIndex = 25
         Me.AgreeButton.UseVisualStyleBackColor = False
         '
@@ -64,13 +62,11 @@ Partial Class OvoForm
         '
         Me.OvoNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.OvoNumber.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.OvoNumber.Enabled = False
         Me.OvoNumber.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OvoNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.OvoNumber.Location = New System.Drawing.Point(305, 361)
-        Me.OvoNumber.Margin = New System.Windows.Forms.Padding(4)
+        Me.OvoNumber.Location = New System.Drawing.Point(395, 358)
         Me.OvoNumber.Name = "OvoNumber"
-        Me.OvoNumber.Size = New System.Drawing.Size(660, 32)
+        Me.OvoNumber.Size = New System.Drawing.Size(495, 26)
         Me.OvoNumber.TabIndex = 23
         '
         'Label3
@@ -79,10 +75,9 @@ Partial Class OvoForm
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(298, 326)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(390, 330)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(175, 34)
+        Me.Label3.Size = New System.Drawing.Size(135, 26)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "OVO Number"
         '
@@ -92,10 +87,9 @@ Partial Class OvoForm
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(298, 363)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(390, 360)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(600, 34)
+        Me.Label4.Size = New System.Drawing.Size(507, 26)
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "_____________________________________________"
         '
@@ -106,10 +100,9 @@ Partial Class OvoForm
         Me.OvoPrice.Enabled = False
         Me.OvoPrice.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OvoPrice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.OvoPrice.Location = New System.Drawing.Point(305, 253)
-        Me.OvoPrice.Margin = New System.Windows.Forms.Padding(4)
+        Me.OvoPrice.Location = New System.Drawing.Point(395, 271)
         Me.OvoPrice.Name = "OvoPrice"
-        Me.OvoPrice.Size = New System.Drawing.Size(660, 32)
+        Me.OvoPrice.Size = New System.Drawing.Size(495, 26)
         Me.OvoPrice.TabIndex = 20
         '
         'Label1
@@ -118,10 +111,9 @@ Partial Class OvoForm
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(298, 217)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(390, 241)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 34)
+        Me.Label1.Size = New System.Drawing.Size(57, 26)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Price"
         '
@@ -131,19 +123,18 @@ Partial Class OvoForm
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(298, 254)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(390, 271)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(600, 34)
+        Me.Label2.Size = New System.Drawing.Size(507, 26)
         Me.Label2.TabIndex = 21
         Me.Label2.Text = "_____________________________________________"
         '
         'OvoForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.Resources.Floral
-        Me.ClientSize = New System.Drawing.Size(1263, 787)
+        Me.ClientSize = New System.Drawing.Size(1280, 720)
         Me.Controls.Add(Me.buttonx)
         Me.Controls.Add(Me.AgreeButton)
         Me.Controls.Add(Me.OvoNumber)
@@ -152,7 +143,10 @@ Partial Class OvoForm
         Me.Controls.Add(Me.OvoPrice)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "OvoForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "OVO"
         Me.ResumeLayout(False)
         Me.PerformLayout()

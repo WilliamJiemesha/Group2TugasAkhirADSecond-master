@@ -131,6 +131,7 @@ Partial Class ReceiptFormvb
         Me.Controls.Add(Me.Label2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ReceiptFormvb"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ReceiptFormvb"
         Me.ResumeLayout(False)
         Me.PerformLayout()

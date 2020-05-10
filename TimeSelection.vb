@@ -1,7 +1,13 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class TimeSelection
-    Dim connect As New MySqlConnection("datasource=127.0.0.1;port=3308;username=root;password=;database=movie_theatre")
-    Public ChosenFilm, Screening, Theatre As String
+    Dim connect As New MySqlConnection(AskDatabase.ConnStringFix)
+    Public ChosenFilm, Screening, Theatre, TimeStart As String
+
+    Private Sub HomeButton_Click(sender As Object, e As EventArgs) Handles HomeButton.Click
+        Me.Close()
+        FilmSelection.Show()
+    End Sub
+
     Private Sub TimeSelection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim query As String
         Dim command As New MySqlCommand
@@ -24,11 +30,12 @@ Public Class TimeSelection
             MsgBox(ex.Message)
         End Try
 
-        timeimage.Image = Image.FromFile("C:\Users\user\source\repos\Group2TugasAkhirADSecond\Resources\" + ChosenFilm + ".jpg")
+        timeimage.Image = Image.FromFile(AskDatabase.filepath + "\" + ChosenFilm + ".jpg")
     End Sub
 
     Private Sub timebox_EditValueChanged(sender As Object, e As EventArgs) Handles timebox.EditValueChanged
         Try
+            TimeStart = timebox.Text
             Theatre = timebox.EditValue
             Dim query As String
             Dim command As New MySqlCommand

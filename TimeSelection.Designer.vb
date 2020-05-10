@@ -25,6 +25,7 @@ Partial Class TimeSelection
         Me.timebox = New DevExpress.XtraEditors.LookUpEdit()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.timeimage = New System.Windows.Forms.PictureBox()
+        Me.HomeButton = New System.Windows.Forms.Button()
         CType(Me.timebox.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.timeimage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -77,17 +78,31 @@ Partial Class TimeSelection
         Me.timeimage.TabIndex = 2
         Me.timeimage.TabStop = False
         '
+        'HomeButton
+        '
+        Me.HomeButton.BackColor = System.Drawing.Color.Transparent
+        Me.HomeButton.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldLogOutExit
+        Me.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.HomeButton.Location = New System.Drawing.Point(1256, 0)
+        Me.HomeButton.Name = "HomeButton"
+        Me.HomeButton.Size = New System.Drawing.Size(25, 25)
+        Me.HomeButton.TabIndex = 22
+        Me.HomeButton.UseVisualStyleBackColor = False
+        '
         'TimeSelection
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.BackgroundFloral
         Me.ClientSize = New System.Drawing.Size(1280, 720)
+        Me.Controls.Add(Me.HomeButton)
         Me.Controls.Add(Me.timeimage)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.timebox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "TimeSelection"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TimeSelection"
         CType(Me.timebox.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.timeimage, System.ComponentModel.ISupportInitialize).EndInit()
@@ -99,4 +114,5 @@ Partial Class TimeSelection
     Friend WithEvents timebox As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents Label1 As Label
     Friend WithEvents timeimage As PictureBox
+    Friend WithEvents HomeButton As Button
 End Class

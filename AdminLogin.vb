@@ -6,7 +6,7 @@ Public Class AdminLogin
     End Sub
 
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
-        Dim connect As New MySqlConnection("datasource=127.0.0.1;port=3308;username=root;password=;database=movie_theatre")
+        Dim connect As New MySqlConnection(AskDatabase.ConnStringFix)
         Dim command As New MySqlCommand
         Dim adapt As New MySqlDataAdapter
         Dim dt, passcheck As New DataTable
@@ -52,4 +52,5 @@ Public Class AdminLogin
         MessageBoxs.ErrorText.Tag = "Admin"
         MessageBoxs.Show()
     End Sub
+
 End Class

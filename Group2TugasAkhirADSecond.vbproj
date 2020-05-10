@@ -71,6 +71,7 @@
     <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.18\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
@@ -80,6 +81,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -110,6 +112,24 @@
     <Compile Include="AdminLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AskDatabase.Designer.vb">
+      <DependentUpon>AskDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AskDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentFilm.Designer.vb">
+      <DependentUpon>DocumentFilm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentFilm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentSales.Designer.vb">
+      <DependentUpon>DocumentSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FilmSelection.Designer.vb">
       <DependentUpon>FilmSelection.vb</DependentUpon>
     </Compile>
@@ -134,10 +154,10 @@
     <Compile Include="Form3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="DocumentTheatre.Designer.vb">
+      <DependentUpon>DocumentTheatre.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form4.vb">
+    <Compile Include="DocumentTheatre.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form5.Designer.vb">
@@ -215,6 +235,12 @@
     <Compile Include="Selection.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TicketForm.Designer.vb">
+      <DependentUpon>TicketForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TicketForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TimeSelection.Designer.vb">
       <DependentUpon>TimeSelection.vb</DependentUpon>
     </Compile>
@@ -244,6 +270,15 @@
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AskDatabase.resx">
+      <DependentUpon>AskDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentFilm.resx">
+      <DependentUpon>DocumentFilm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentSales.resx">
+      <DependentUpon>DocumentSales.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FilmSelection.resx">
       <DependentUpon>FilmSelection.vb</DependentUpon>
     </EmbeddedResource>
@@ -256,8 +291,8 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <EmbeddedResource Include="DocumentTheatre.resx">
+      <DependentUpon>DocumentTheatre.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.vb</DependentUpon>
@@ -297,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Selection.resx">
       <DependentUpon>Selection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketForm.resx">
+      <DependentUpon>TicketForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimeSelection.resx">
       <DependentUpon>TimeSelection.vb</DependentUpon>
@@ -397,6 +435,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Floral1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldCash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldReport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldX1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldMovie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldPrinter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

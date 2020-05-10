@@ -133,6 +133,9 @@
   <data name="LogoTheatre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\LogoTheatre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GoldMovie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GoldMovie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GoldReload" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\GoldReload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,11 +166,17 @@
   <data name="GoldTrash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\GoldTrash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GoldX1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GoldX1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GoldSchedule" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\GoldSchedule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GoldPencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\GoldPencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GoldReport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GoldCheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\GoldCheck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,10 +184,16 @@
   <data name="GoldLogOutExit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\GoldLogOutExit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GoldCash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GoldCash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GoldAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\GoldAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GoldX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\GoldX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldPrinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\GoldPrinter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
