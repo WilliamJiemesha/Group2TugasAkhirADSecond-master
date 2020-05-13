@@ -12,7 +12,4 @@
         End If
     End Sub
 
-    Private Sub MehtodePayForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

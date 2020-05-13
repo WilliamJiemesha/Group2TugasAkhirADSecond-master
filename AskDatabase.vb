@@ -54,7 +54,7 @@ Public Class AskDatabase
             DeviceInfo.Visible = True
 
             connect.Close()
-            MessageBox.Show("Success Connectiong to The Server", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            MessageBox.Show("Success Connecting to The Server", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         Catch ex As Exception
             connect.Close()
             MessageBox.Show("Error Input, Try Again", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)

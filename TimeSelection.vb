@@ -9,26 +9,7 @@ Public Class TimeSelection
     End Sub
 
     Private Sub TimeSelection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim query As String
-        Dim command As New MySqlCommand
-        Dim adapt As New MySqlDataAdapter
-        Dim dts As New DataTable
-        Try
-            connect.Open()
-            query = "SELECT s.starting_time, d.theatre_id FROM screening s, dtheatre d WHERE d.film_id = '" + ChosenFilm + "' AND d.screening_id = s.screening_id"
-            command = New MySqlCommand(query, connect)
-            adapt = New MySqlDataAdapter(command)
-            adapt.Fill(dts)
-
-            timebox.Properties.DataSource = dts
-            timebox.Properties.DisplayMember = "starting_time"
-            timebox.Properties.ValueMember = "theatre_id"
-            timebox.Text = ""
-            connect.Close()
-        Catch ex As Exception
-            connect.Close()
-            MsgBox(ex.Message)
-        End Try
+        loadin()
 
         timeimage.Image = Image.FromFile(AskDatabase.filepath + "\" + ChosenFilm + ".jpg")
     End Sub
@@ -52,8 +33,33 @@ Public Class TimeSelection
             connect.Close()
             Seats.Show()
             Me.Hide()
+
         Catch ex As Exception
             connect.close
         End Try
+    End Sub
+    Public Sub loadin()
+        Dim query As String
+        Dim command As New MySqlCommand
+        Dim adapt As New MySqlDataAdapter
+        Dim dts As New DataTable
+        Try
+            connect.Open()
+            query = "SELECT s.starting_time, d.theatre_id FROM screening s, dtheatre d WHERE d.film_id = '" + ChosenFilm + "' AND d.screening_id = s.screening_id"
+            command = New MySqlCommand(query, connect)
+            adapt = New MySqlDataAdapter(command)
+            adapt.Fill(dts)
+
+            timebox.EditValue = vbNull
+            timebox.Properties.DataSource = dts
+            timebox.Properties.DisplayMember = "starting_time"
+            timebox.Properties.ValueMember = "theatre_id"
+            timebox.Text = ""
+            connect.Close()
+        Catch ex As Exception
+            connect.Close()
+            MsgBox(ex.Message)
+        End Try
+
     End Sub
 End Class

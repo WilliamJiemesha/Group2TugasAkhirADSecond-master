@@ -3,9 +3,17 @@ Public Class ReceiptFormvb
     Public total As Integer
     Dim connect As New MySqlConnection(AskDatabase.ConnStringFix)
     Private Sub ReceiptFormvb_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim totals As Integer
+        If Date.Now.ToString("dddd").ToLower = "sunday" Or Date.Now.ToString("dddd").ToLower = "saturday" Then
+            totals = 60000
+        ElseIf Date.Now.ToString("dddd").ToLower = "friday" Then
+            totals = 50000
+        Else
+            totals = 35000
+        End If
         SeatCountBox.Text = Seats.tickets
-        TotalAmmountBox.Text = Seats.tickets * 50000
-        total = Seats.tickets * 50000
+        total = Seats.tickets * totals
+        TotalAmmountBox.Text = total
     End Sub
 
     Private Sub AgreeButton_Click(sender As Object, e As EventArgs) Handles AgreeButton.Click

@@ -24,8 +24,8 @@
         CashForm.Close()
         DebitForm.Close()
         Seats.Close()
+        TimeSelection.Close()
         FilmSelection.Close()
-
     End Sub
 
 

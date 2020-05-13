@@ -419,13 +419,13 @@ Public Class MainFormvb
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles addfilmaddbutton.Click
         Try
-            If addfilmfilmbox.Text <> "" Then
+            If addfilmfilmbox.Text <> "" And addfilmgenrebox.Text <> "" And addfilmratingbox.Text <> "" And addfilmdatebox.Text <> "" And addfilmdurationbox.Text <> "" And addfilmstatusbox.Text <> "" Then
                 checkRows()
-                connect.Open()
-                query = "INSERT INTO film VALUES ('" + ids.ToString + "', '" + addfilmfilmbox.Text + "', '" + addfilmratingbox.EditValue.ToString + "', '" + addfilmgenrebox.EditValue.ToString + "', '" + addfilmdatebox.Text + "', '" + addfilmdurationbox.Value.ToString + "', '" + addfilmstatusbox.Text + "', '0')"
-                command = New MySqlCommand(query, connect)
-                command.ExecuteNonQuery()
-                connect.Close()
+                'connect.Open()
+                'query = "INSERT INTO film VALUES ('" + ids.ToString + "', '" + addfilmfilmbox.Text + "', '" + addfilmratingbox.EditValue.ToString + "', '" + addfilmgenrebox.EditValue.ToString + "', '" + addfilmdatebox.Text + "', '" + addfilmdurationbox.Value.ToString + "', '" + addfilmstatusbox.Text + "', '0')"
+                'command = New MySqlCommand(query, connect)
+                'command.ExecuteNonQuery()
+                'connect.Close()
 
 
                 'New
@@ -453,6 +453,11 @@ Public Class MainFormvb
                     Else
                         File.Copy(strFileName, destinationPath, False)
                         MsgBox("File Moved")
+                        connect.Open()
+                        query = "INSERT INTO film VALUES ('" + ids.ToString + "', '" + addfilmfilmbox.Text + "', '" + addfilmratingbox.EditValue.ToString + "', '" + addfilmgenrebox.EditValue.ToString + "', '" + addfilmdatebox.Text + "', '" + addfilmdurationbox.Value.ToString + "', '" + addfilmstatusbox.Text + "', '0')"
+                        command = New MySqlCommand(query, connect)
+                        command.ExecuteNonQuery()
+                        connect.Close()
                     End If
                 Else
                     MsgBox("File Not move")
@@ -460,6 +465,10 @@ Public Class MainFormvb
 
                 'Later Change
                 My.Computer.FileSystem.RenameFile(AskDatabase.filepath + "\" + filename, ids.ToString + ".jpg")
+                addfilmfilmbox.Text = ""
+                addfilmgenrebox.Text = ""
+                addfilmratingbox.Text = ""
+                addfilmdatebox.Text = ""
                 ForTable()
             End If
         Catch ex As Exception
