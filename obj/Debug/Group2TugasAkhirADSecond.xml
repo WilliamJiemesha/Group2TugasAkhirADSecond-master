@@ -1,0 +1,187 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Group2TugasAkhirADSecond
+</name>
+</assembly>
+<members>
+<member name="T:Group2TugasAkhirADSecond.My.Resources.ImageHolder">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.BackgroundFloral">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldAdd">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldAddT">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldCash">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldCheck">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldDateAdd">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldDateEdit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldEdit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldEye">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldGearAdmin">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldHome">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldKey">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldLogOutExit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldLogOutExit1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldMovie">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldPencil">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldPerson">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldPrinter">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldPurchaseOrder">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldReload">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldReport">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldSchedule">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldTrash">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldX">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldX1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.ImageHolder.LogoTheatre">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Group2TugasAkhirADSecond.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.Resources.Floral">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.Resources.GoldEditT">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Group2TugasAkhirADSecond.My.Resources.Resources.GoldPurchaseOrder">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
