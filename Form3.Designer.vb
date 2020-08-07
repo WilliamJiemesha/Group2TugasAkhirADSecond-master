@@ -100,7 +100,7 @@ Partial Class OvoForm
         Me.OvoPrice.Enabled = False
         Me.OvoPrice.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OvoPrice.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.OvoPrice.Location = New System.Drawing.Point(395, 271)
+        Me.OvoPrice.Location = New System.Drawing.Point(395, 270)
         Me.OvoPrice.Name = "OvoPrice"
         Me.OvoPrice.Size = New System.Drawing.Size(495, 26)
         Me.OvoPrice.TabIndex = 20

@@ -4,8 +4,13 @@ Public Class AskDatabase
     Dim query, connstring As String
     Public ConnStringFix, filepath As String
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+        LoadingForm.Close()
+    End Sub
+
     Private Sub DeviceButton_Click(sender As Object, e As EventArgs) Handles DeviceButton.Click
-        If devicebox.text <> "" Then
+        If DeviceBox.Text <> "" Then
             Try
                 connect.Open()
 

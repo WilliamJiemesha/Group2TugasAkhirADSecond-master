@@ -10,6 +10,7 @@
         ElseIf CbPayment.Text = "Go-Pay" Then
             GopayForm.Show()
         End If
+        Me.Hide()
     End Sub
 
 End Class

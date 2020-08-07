@@ -39,6 +39,7 @@ Partial Class AskDatabase
         Me.DeviceLabel = New System.Windows.Forms.Label()
         Me.DeviceInfo = New System.Windows.Forms.Label()
         Me.DeviceButton = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'DatasourceBox
@@ -189,11 +190,23 @@ Partial Class AskDatabase
         Me.DeviceButton.UseVisualStyleBackColor = True
         Me.DeviceButton.Visible = False
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.Location = New System.Drawing.Point(568, 2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(30, 30)
+        Me.Button1.TabIndex = 17
+        Me.Button1.Text = " X"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'AskDatabase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(600, 400)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DeviceButton)
         Me.Controls.Add(Me.DeviceInfo)
         Me.Controls.Add(Me.DeviceLabel)
@@ -237,4 +250,5 @@ Partial Class AskDatabase
     Friend WithEvents DeviceLabel As Label
     Friend WithEvents DeviceInfo As Label
     Friend WithEvents DeviceButton As Button
+    Friend WithEvents Button1 As Button
 End Class

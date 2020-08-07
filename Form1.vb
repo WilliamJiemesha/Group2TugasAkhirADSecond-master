@@ -9,6 +9,7 @@
         Else
             If MessageBox.Show("Apakah Anda Yakin Ingin Melanjutkan ?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
                 FinishForm.Show()
+                Me.Hide()
             End If
         End If
     End Sub

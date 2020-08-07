@@ -27,5 +27,6 @@ Public Class FinishForm
         TicketForm.DateLabel.Text = DateTime.Now.ToString("dddd , dd MMMM yyyy")
         TicketForm.DateLabel2.Text = DateTime.Now.ToString("dddd , dd MMMM yyyy")
         TicketForm.Show()
+        Me.Hide()
     End Sub
 End Class

@@ -59,6 +59,7 @@ Public Class MainFormvb
         EditFilm.Checked = False
         AddSchedule.Checked = False
         EditSchedule.Checked = False
+        ReportButton.Checked = False
     End Sub
 
     'Load form
@@ -109,17 +110,6 @@ Public Class MainFormvb
         PanelAddSchedule.Visible = False
         PanelEditSchedule.Visible = False
         ReportPanel.Visible = False
-    End Sub
-
-
-
-
-    Private Sub ReportButton_CheckedChanged(sender As Object, e As EventArgs) Handles ReportButton.CheckedChanged
-        If ReportButton.Checked = True Then
-            panelshide()
-            uncheck()
-            ReportPanel.Visible = True
-        End If
     End Sub
 
 
@@ -183,7 +173,7 @@ Public Class MainFormvb
         End If
     End Sub
 
-    Private Sub AvailableButton_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub AvailableButton_CheckedChanged(sender As Object, e As EventArgs) Handles addtheatrestatusbox.EditValueChanged
         If addtheatrestatusbox.Text = "Available" Then
             status = "Available"
         Else
@@ -421,12 +411,6 @@ Public Class MainFormvb
         Try
             If addfilmfilmbox.Text <> "" And addfilmgenrebox.Text <> "" And addfilmratingbox.Text <> "" And addfilmdatebox.Text <> "" And addfilmdurationbox.Text <> "" And addfilmstatusbox.Text <> "" Then
                 checkRows()
-                'connect.Open()
-                'query = "INSERT INTO film VALUES ('" + ids.ToString + "', '" + addfilmfilmbox.Text + "', '" + addfilmratingbox.EditValue.ToString + "', '" + addfilmgenrebox.EditValue.ToString + "', '" + addfilmdatebox.Text + "', '" + addfilmdurationbox.Value.ToString + "', '" + addfilmstatusbox.Text + "', '0')"
-                'command = New MySqlCommand(query, connect)
-                'command.ExecuteNonQuery()
-                'connect.Close()
-
 
                 'New
                 Dim fd As OpenFileDialog = New OpenFileDialog()
@@ -453,11 +437,15 @@ Public Class MainFormvb
                     Else
                         File.Copy(strFileName, destinationPath, False)
                         MsgBox("File Moved")
+
+
                         connect.Open()
                         query = "INSERT INTO film VALUES ('" + ids.ToString + "', '" + addfilmfilmbox.Text + "', '" + addfilmratingbox.EditValue.ToString + "', '" + addfilmgenrebox.EditValue.ToString + "', '" + addfilmdatebox.Text + "', '" + addfilmdurationbox.Value.ToString + "', '" + addfilmstatusbox.Text + "', '0')"
                         command = New MySqlCommand(query, connect)
                         command.ExecuteNonQuery()
                         connect.Close()
+
+
                     End If
                 Else
                     MsgBox("File Not move")
@@ -571,6 +559,8 @@ Public Class MainFormvb
         End Try
     End Sub
 
+
+
     'Edit Film
     Private Sub EditFilm_CheckedChanged(sender As Object, e As EventArgs) Handles EditFilm.CheckedChanged
         If EditFilm.Checked = True Then
@@ -587,7 +577,7 @@ Public Class MainFormvb
         Try
             If editfilmfilmbox.Text <> "" Then
                 connect.Open()
-                query = "UPDATE film SET film_name = '" + editfilmfilmbox.Text + "', pg_id = '" + editfilmratingbox.EditValue.ToString + "', genre_id = '" + editfilmgenrebox.EditValue.ToString + "', release_date = '" + editfilmdatebox.Text + "', duration = '" + editfilmdurationbox.Text.ToString + "', film_status = '" + editfilmstatusbox.Text.ToString + "'  WHERE film_id = '" + idp + "'"
+                query = "UPDATE film SET film_name = '" + editfilmfilmbox.Text + "', pg_id = '" + editfilmratingbox.EditValue.ToString + "', genre_id = '" + editfilmgenrebox.EditValue.ToString + "', release_date = '" + editfilmdatebox.Text.ToString.Substring(0, 10) + "', duration = '" + editfilmdurationbox.Text.ToString + "', film_status = '" + editfilmstatusbox.Text.ToString + "'  WHERE film_id = '" + idp + "'"
                 command = New MySqlCommand(query, connect)
                 command.ExecuteNonQuery()
                 connect.Close()
@@ -601,7 +591,7 @@ Public Class MainFormvb
         End Try
     End Sub
 
-    Private Sub showbutton_Click(sender As Object, e As EventArgs) Handles editfilmdeletebutton.Click
+    Private Sub Deletebuttonedit_Click(sender As Object, e As EventArgs) Handles editfilmdeletebutton.Click
         Try
             If MessageBox.Show("Are you Sure?", "Notice", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes Then
                 connect.Open()
@@ -619,8 +609,6 @@ Public Class MainFormvb
         Catch ex As Exception
             connect.Close()
         End Try
-
-
         ForTables()
     End Sub
     Private Sub DataShown_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles editfilmdatashown.CellClick
@@ -733,21 +721,21 @@ Public Class MainFormvb
                 connect.Open()
                 'Theatre
                 adsc1.Clear()
-                query = "SELECT * FROM theatre"
+                query = "SELECT * FROM theatre WHERE theatre_status = 'Available' AND delete_status = 0"
                 command = New MySqlCommand(query, connect)
                 adapt = New MySqlDataAdapter(command)
                 adapt.Fill(adsc1)
 
                 'Film
                 adsc2.Clear()
-                query = "SELECT * FROM film"
+                query = "SELECT * FROM film WHERE film_status = 'Available' AND delete_status = 0"
                 command = New MySqlCommand(query, connect)
                 adapt = New MySqlDataAdapter(command)
                 adapt.Fill(adsc2)
 
                 'Screening
                 adsc3.Clear()
-                query = "SELECT * FROM screening"
+                query = "SELECT * FROM screening WHERE delete_status = 0"
                 command = New MySqlCommand(query, connect)
                 adapt = New MySqlDataAdapter(command)
                 adapt.Fill(adsc3)
@@ -777,53 +765,64 @@ Public Class MainFormvb
     End Sub
 
     Private Sub checkaddschedulebutton(sender As Object, e As EventArgs) Handles addscheduleschedulebutton.Click
-
         If addscheduletheatrebox.Text <> "" And addschedulefilmbox.Text <> "" And addschedulescreeningbox.Text <> "" Then
-
             Try
                 connect.Open()
 
-                datas.Clear()
-                query = "SELECT * FROM dtheatre WHERE theatre_id = '" + idtheatreadsc + "' AND screening_id = '" + idscreeningadsc + "'"
+                Dim wtfdude As New DataTable
+                query = "SELECT * FROM dtheatre GROUP BY film_id"
                 command = New MySqlCommand(query, connect)
                 adapt = New MySqlDataAdapter(command)
-                adapt.Fill(datas)
-
-
-                If datas.Rows.Count = 0 Then
-                    query = "INSERT INTO dtheatre VALUES ('" + idtheatreadsc + "','" + idscreeningadsc + "','" + idfilmadsc + "')"
-                    command = New MySqlCommand(query, connect)
-                    command.ExecuteNonQuery()
-
-                    'Seats time
-                    dtsch.Clear()
-                    query = "SELECT seat_ammount FROM theatre WHERE theatre_id = '" + idtheatreadsc + "';"
+                adapt.Fill(wtfdude)
+                If wtfdude.Rows.Count >= 8 Then
+                    MessageBox.Show("Max Film Reached", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                Else
+                    datas.Clear()
+                    query = "SELECT * FROM dtheatre WHERE theatre_id = '" + idtheatreadsc + "' AND screening_id = '" + idscreeningadsc + "'"
                     command = New MySqlCommand(query, connect)
                     adapt = New MySqlDataAdapter(command)
-                    adapt.Fill(dtsch)
+                    adapt.Fill(datas)
 
-                    Dim idseat As String
-                    For i = 1 To dtsch.Rows(0).Item(0)
-                        If i < 10 Then
-                            idseat = "D0" + i.ToString
-                        ElseIf i < 100 Then
-                            idseat = "D" + i.ToString
-                        End If
 
-                        query = "INSERT INTO seat VALUES ('" + idseat + "','1','" + idtheatreadsc + "','" + idscreeningadsc + "', '" + idfilmadsc + "')"
+                    If datas.Rows.Count = 0 Then
+                        query = "INSERT INTO dtheatre VALUES ('" + idtheatreadsc + "','" + idscreeningadsc + "','" + idfilmadsc + "')"
                         command = New MySqlCommand(query, connect)
                         command.ExecuteNonQuery()
-                    Next
-                    connect.Close()
-                    MessageBox.Show("Success", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-                Else
-                    MessageBox.Show("Schedule already exists", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-                    connect.Close()
+
+                        'Seats time
+                        dtsch.Clear()
+                        query = "SELECT seat_ammount FROM theatre WHERE theatre_id = '" + idtheatreadsc + "';"
+                        command = New MySqlCommand(query, connect)
+                        adapt = New MySqlDataAdapter(command)
+                        adapt.Fill(dtsch)
+
+                        Dim idseat As String
+                        For i = 1 To dtsch.Rows(0).Item(0)
+                            If i < 10 Then
+                                idseat = "D0" + i.ToString
+                            ElseIf i < 100 Then
+                                idseat = "D" + i.ToString
+                            End If
+
+                            query = "INSERT INTO seat VALUES ('" + idseat + "','1','" + idtheatreadsc + "','" + idscreeningadsc + "', '" + idfilmadsc + "')"
+                            command = New MySqlCommand(query, connect)
+                            command.ExecuteNonQuery()
+                        Next
+                        connect.Close()
+                        MessageBox.Show("Success", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                        addschedulefilmbox.Text = ""
+                        addscheduletheatrebox.Text = ""
+                        addschedulescreeningbox.Text = ""
+                    Else
+                        MessageBox.Show("Schedule already exists", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                        connect.Close()
+                    End If
                 End If
             Catch ex As Exception
                 connect.Close()
                 MsgBox(ex.Message)
             End Try
+
         Else
             MessageBox.Show("Data Incomplete", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End If
@@ -837,7 +836,6 @@ Public Class MainFormvb
         panelshide()
         uncheck()
         PanelEditSchedule.Visible = True
-
 
         esdt.Clear()
         query = "SELECT t.theatre_id `Theatre ID`, t.theatre_name `Theatre Name`, f.film_id `Film ID`, f.film_name `Film Name`, s.screening_id `Screening ID`, s.starting_time `Starting Time` FROM dtheatre d, film f, screening s, theatre t WHERE t.theatre_id = d.theatre_id AND d.film_id = f.film_id AND s.screening_id = d.screening_id"
@@ -868,6 +866,9 @@ Public Class MainFormvb
                 command.ExecuteNonQuery()
 
                 MessageBox.Show("Success", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                editschedulefilmbox.Text = ""
+                editscheduletheatrebox.Text = ""
+                editschedulescreeningbox.Text = ""
 
                 esdt.Clear()
                 query = "SELECT t.theatre_id `Theatre ID`, t.theatre_name `Theatre Name`, f.film_id `Film ID`, f.film_name `Film Name`, s.screening_id `Screening ID`, s.starting_time `Starting Time` FROM dtheatre d, film f, screening s, theatre t WHERE t.theatre_id = d.theatre_id AND d.film_id = f.film_id AND s.screening_id = d.screening_id"
@@ -898,20 +899,13 @@ Public Class MainFormvb
         DocumentTheatre.Show()
     End Sub
 
-
-
-
-
-
-
-
-
-
-    'This is for screening edit if we agree to do
-
-
-
-
+    Private Sub ReportButton_CheckedChanged(sender As Object, e As EventArgs) Handles ReportButton.CheckedChanged
+        If ReportButton.Checked = True Then
+            panelshide()
+            uncheck()
+            ReportPanel.Visible = True
+        End If
+    End Sub
 
 
 

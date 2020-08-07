@@ -1,10 +1,11 @@
 ﻿Public Class OvoForm
     Private Sub AgreeButton_Click(sender As Object, e As EventArgs) Handles AgreeButton.Click
         If OvoNumber.Text = "" Then
-            MessageBox.Show("Input Data Dengan Benar!", "PENTING", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Wrong Input", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            If MessageBox.Show("Apakah Anda Yakin Ingin Melanjutkan ?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+            If MessageBox.Show("Are you sure you want to continue?", "Notice", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
                 FinishForm.Show()
+                Me.Hide()
             End If
         End If
 

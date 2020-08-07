@@ -157,6 +157,7 @@ Public Class Seats
             MessageBox.Show("Occupied", "Notice", MessageBoxButtons.OK, MessageBoxIcon.None)
         Else
             If MessageBox.Show("Are you sure?", "Notice", MessageBoxButtons.YesNo, MessageBoxIcon.None) = DialogResult.Yes Then
+                HomeButton.Visible = False
                 Dim connect As New MySqlConnection(AskDatabase.ConnStringFix)
                 Dim command As New MySqlCommand
                 Dim query As String
@@ -164,7 +165,7 @@ Public Class Seats
                 Dim dts As New DataTable
 
                 If MultipleSelection.Checked = True Then
-                    If SeatChooseBox.text <> String.Empty Then
+                    If SeatChooseBox.Text <> String.Empty Then
                         Try
                             connect.Open()
                             Dim checker As New Boolean

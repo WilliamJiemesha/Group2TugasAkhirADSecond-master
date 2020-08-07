@@ -33,6 +33,8 @@ Public Class AdminLogin
                         If passcheck.Rows(0).Item(0) = passwordtextbox.Text Then
                             MainFormvb.Show()
                             Me.Hide()
+                            usertextbox.Text = ""
+                            passwordtextbox.Text = ""
                         Else
                             errors()
                         End If
@@ -40,6 +42,7 @@ Public Class AdminLogin
                 Next
             End If
             connect.Close()
+
         Catch ex As Exception
             connect.Close()
             MsgBox(ex.Message)

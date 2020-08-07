@@ -49,9 +49,9 @@ Partial Class MehtodePayForm
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(407, 321)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(507, 26)
+        Me.Label4.Size = New System.Drawing.Size(474, 26)
         Me.Label4.TabIndex = 16
-        Me.Label4.Text = "_____________________________________________"
+        Me.Label4.Text = "__________________________________________"
         '
         'AgreeButton
         '
@@ -69,7 +69,7 @@ Partial Class MehtodePayForm
         'CbPayment
         '
         Me.CbPayment.EditValue = ""
-        Me.CbPayment.Location = New System.Drawing.Point(412, 307)
+        Me.CbPayment.Location = New System.Drawing.Point(414, 312)
         Me.CbPayment.Name = "CbPayment"
         Me.CbPayment.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.CbPayment.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -95,7 +95,7 @@ Partial Class MehtodePayForm
         Me.CbPayment.Properties.HighlightedItemStyle = DevExpress.XtraEditors.HighlightStyle.Standard
         Me.CbPayment.Properties.Items.AddRange(New Object() {"Cash", "Debit/Credit Card", "OVO", "Go-Pay"})
         Me.CbPayment.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-        Me.CbPayment.Size = New System.Drawing.Size(495, 32)
+        Me.CbPayment.Size = New System.Drawing.Size(464, 32)
         Me.CbPayment.TabIndex = 44
         '
         'MehtodePayForm
@@ -110,7 +110,7 @@ Partial Class MehtodePayForm
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "MehtodePayForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         CType(Me.CbPayment.Properties, System.ComponentModel.ISupportInitialize).EndInit()
